@@ -18,7 +18,7 @@ public class Tubes2SC {
     public static void main(String[] args) throws IOException {
         // TODO code application logic here
         int[][] input = new int[50000][10];
-        float[][] dataNorm = new float[50000][10];
+        double[][] dataNorm = new double[50000][10];
         int[] target = new int[50000];
         
         readData data = new readData();
@@ -33,9 +33,10 @@ public class Tubes2SC {
 //            System.out.println();
 //        }
         
-        normalisasiData norm = new normalisasiData();;
+        normalisasiData norm = new normalisasiData();
         norm.minMax(input, dataNorm);
         
-        
+        writeData data1 = new writeData();
+        data1.write(dataNorm);
     }
 }

@@ -10,7 +10,7 @@ package tubes2sc;
  * @author elizajasin
  */
 public class normalisasiData {
-    public static void minMax(int[][] data, float[][] newdata){
+    public static void minMax(int[][] data, double[][] newdata){
         String s;
         int jumdat=44000;
         int newmax=1;
