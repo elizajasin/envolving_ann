@@ -16,7 +16,7 @@ import java.io.IOException;
  * @author elizajasin
  */
 public class writeData {
-    private static final String EXCEL_FILE_LOCATION = "E:\\Kuliah\\semester 7\\SC\\Tugas 2\\Tubes2SC\\data_norm.xls";
+    private static final String EXCEL_FILE_LOCATION = "E:\\Kuliah\\semester 7\\SC\\Tugas 2\\Tubes2SC\\data_norm_test.xls";
     public void write(double[][] data){
         WritableWorkbook myFirstWbook = null;
         try {
@@ -27,7 +27,7 @@ public class writeData {
             WritableSheet excelSheet = myFirstWbook.createSheet("Sheet 1", 0);
 
             // add something into the Excel sheet
-            for (int i = 0; i <= 43999 ; i++){
+            for (int i = 0; i <= 13999 ; i++){
                 for (int j = 0; j < 10 ; j++){
                     Number number = new Number(j, i, data[i][j]);
                     excelSheet.addCell(number);

@@ -12,7 +12,7 @@ package tubes2sc;
 public class normalisasiData {
     public static void minMax(int[][] data, double[][] newdata){
         String s;
-        int jumdat=44000;
+        int jumdat=14000;
         int newmax=1;
         int newmin=0;
         for(int j=0;j<10;j++){
@@ -26,7 +26,7 @@ public class normalisasiData {
     }
     private static float max(int[][] data,int j) {
         float max = 0;
-        int jumdat=44000;
+        int jumdat=14000;
         for(int i=0;i<jumdat;i++){
             if(data[i][j]>max){
                 max=data[i][j];
@@ -38,7 +38,7 @@ public class normalisasiData {
      
     private static float min(int[][] data,int j){
      float min=1000;        
-            int jumdat=44000;
+            int jumdat=14000;
             for(int i=0;i<jumdat;i++){
                 if(min>data[i][j]){
                 min=data[i][j];

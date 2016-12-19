@@ -22,7 +22,7 @@ public class Tubes2SC {
         int[] target = new int[50000];
         
         readData data = new readData();
-        data.setInputFile("data_train.xls");
+        data.setInputFile("data_test.xls");
         data.read(input,target);
         
 //        display data
