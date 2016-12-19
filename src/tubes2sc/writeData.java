@@ -27,7 +27,7 @@ public class writeData {
             WritableSheet excelSheet = myFirstWbook.createSheet("Sheet 1", 0);
 
             // add something into the Excel sheet
-            for (int i = 0; i < 43999 ; i++){
+            for (int i = 0; i <= 43999 ; i++){
                 for (int j = 0; j < 10 ; j++){
                     Number number = new Number(j, i, data[i][j]);
                     excelSheet.addCell(number);
